@@ -9,12 +9,12 @@
   margin-bottom: 5%;
 }
 .banner h1 {
-  height: fit-content;
   color: aliceblue;
+  /* height: fit-content;
   background-color: black;
   border-radius: 10%;
   padding: 10px;
-  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712); */
 }
 .menulist {
   background-color: black;
