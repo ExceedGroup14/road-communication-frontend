@@ -1,6 +1,7 @@
-import React from 'react'
-import '../components/Loginform.css'
-import AuthMenubar from './AuthMenubar'
+import React from "react"
+import "../components/Loginform.css"
+import AuthMenubar from "./AuthMenubar"
+import "./Registerform.css"
 
 const RegisterForm = (props) => {
   return (
