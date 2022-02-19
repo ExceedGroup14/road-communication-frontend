@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import Loginform from '../components/Loginform'
 import axios from 'axios'
+import { useCookies } from 'react-cookie'
 
 const Login = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const [cookies, setCookie] = useCookies(['user'])
 
   async function onSubmit(e) {
     e.preventDefault()
@@ -16,7 +18,9 @@ const Login = () => {
       'https://ecourse.cpe.ku.ac.th/exceed14/api/login/',
       data
     )
-    console.log(response.data)
+    const responseData = response.data
+    setCookie('token', responseData.token, { path: '/' })
+    console.log(responseData.token)
     alert('See data in console')
   }
   return (
