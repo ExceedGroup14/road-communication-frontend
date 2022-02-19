@@ -1,0 +1,21 @@
+.status {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.status .leftst {
+  height: fit-content;
+  color: aliceblue;
+  background-color: black;
+  border-radius: 10%;
+  padding: 10px;
+  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+}
+.status .rightst {
+  height: fit-content;
+  color: aliceblue;
+  background-color: black;
+  border-radius: 10%;
+  padding: 10px;
+  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+}
