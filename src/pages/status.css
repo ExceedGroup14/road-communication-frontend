@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
 }
+.status img {
+  height: 300px;
+}
 .status .leftst {
   height: fit-content;
   color: aliceblue;
