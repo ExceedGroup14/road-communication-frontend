@@ -21,10 +21,12 @@
 }
 .editbutton {
   flex: 1 1 0%;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-radius: 10px;
   background-color: brown;
   border: none;
   padding: 0.25rem 0.25rem;
   color: black;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
 }

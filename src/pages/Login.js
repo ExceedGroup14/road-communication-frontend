@@ -23,8 +23,12 @@ const Login = () => {
       data
     )
     const responseData = response.data
+    if (!responseData.hasOwnProperty('token')) {
+      alert(responseData.result)
+      return
+    }
     setCookie('token', responseData.token, { path: '/' })
-    console.log(responseData.token)
+    console.log(responseData)
     alert('See data in console')
   }
   return (
