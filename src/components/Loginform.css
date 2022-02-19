@@ -1,0 +1,33 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid white;
+  height: 90%;
+}
+
+.title-section {
+  color: #fff;
+  width: 50%;
+  border: 3px solid red;
+  height: 90%;
+}
+
+.form-section {
+  width: 50%;
+  border: 3px solid green;
+  margin: auto;
+}
+
+.login input {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
