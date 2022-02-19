@@ -1,8 +1,8 @@
-import "./App.css"
-import { Routes, Route, BrowserRouter } from "react-router-dom"
-import Login from "./pages/Login"
-import Status from "./pages/Status"
-import Edit from "./pages/Edit"
+import './App.css'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import Login from './pages/Login'
+import Status from './pages/Status'
+import Edit from './pages/Edit'
 
 function App() {
   return (
