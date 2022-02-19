@@ -16,8 +16,8 @@ body {
   border-radius: 20px;
   -ms-transform: rotate(-1.5deg); /* IE 9 */
   transform: rotate(-1.5deg);
-  padding: 50px 80px;
-  height: 88%;
+  padding: 30px 50px 80px 50px;
+  height: 69vh;
   border: 0.5px solid rgba(233, 233, 233, 0.4);
 }
 
