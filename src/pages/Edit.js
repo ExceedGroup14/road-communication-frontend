@@ -10,12 +10,14 @@ const Edit = () => {
       <div id="circle"></div>
       <div className="container">
         <Carname />
-        <div className="content">
-          <div className="wordlist">
-            <Word word="word" />
-            <Word word="word" />
-            <Word word="word" />
-            <Word word="word" />
+        <div className="edit">
+          <div className="content">
+            <div className="wordlist">
+              <Word word="word" number="1" />
+              <Word word="word" number="2" />
+              <Word word="word" number="3" />
+              <Word word="word" number="4" />
+            </div>
           </div>
         </div>
       </div>

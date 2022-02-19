@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import Loginform from '../components/Loginform'
-import axios from 'axios'
-import { useCookies } from 'react-cookie'
+import React, { useState, useEffect } from "react"
+import Loginform from "../components/Loginform"
+import axios from "axios"
+import { useCookies } from "react-cookie"
 
 const Login = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const [cookies, setCookie] = useCookies(['user'])
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [cookies, setCookie] = useCookies(["user"])
 
   useEffect(() => {
     console.log(cookies.token)
@@ -19,13 +19,13 @@ const Login = () => {
       password: password,
     }
     const response = await axios.post(
-      'https://ecourse.cpe.ku.ac.th/exceed14/api/login/',
+      "https://ecourse.cpe.ku.ac.th/exceed14/api/login/",
       data
     )
     const responseData = response.data
-    setCookie('token', responseData.token, { path: '/' })
+    setCookie("token", responseData.token, { path: "/" })
     console.log(responseData.token)
-    alert('See data in console')
+    alert("See data in console")
   }
   return (
     <div className="loginpage">

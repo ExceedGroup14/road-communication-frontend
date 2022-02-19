@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import RegisterForm from '../components/RegisterForm'
-import axios from 'axios'
+import React, { useState } from "react"
+import RegisterForm from "../components/RegisterForm"
+import axios from "axios"
 
 const Register = (props) => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const [email, setEmail] = useState('')
-  const [confirmPassword, setConfirmPassword] = useState('')
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("")
+  const [confirmPassword, setConfirmPassword] = useState("")
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
 
   async function onSubmit(e) {
     e.preventDefault()
@@ -24,11 +24,11 @@ const Register = (props) => {
       lastname: lastName,
     }
     const response = await axios.post(
-      'https://ecourse.cpe.ku.ac.th/exceed14/api/register/',
+      "https://ecourse.cpe.ku.ac.th/exceed14/api/register/",
       data
     )
     console.log(response.data)
-    alert('See data in console')
+    alert("See data in console")
   }
   return (
     <div className="register-page">

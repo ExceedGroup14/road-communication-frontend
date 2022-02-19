@@ -1,14 +1,24 @@
 .word {
   display: flex;
+  flex-wrap: nowrap;
   margin-bottom: 5%;
+}
+
+.word h3 {
+  color: #fff;
+  align-self: center;
+}
+
+.word form {
+  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
   border-top-left-radius: 10%;
   overflow: hidden;
   width: 100%;
-  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+  display: flex;
 }
-.word input {
-  flex: 1 1 0%;
+form input {
   padding: 0.25rem 0.75rem;
+  width: 100%;
   border-right: 1px solid brown;
   border-bottom: 1px solid brown;
   outline: none;
@@ -20,11 +30,11 @@
   color: brown;
 }
 .editbutton {
-  flex: 1 1 0%;
+  width: 10%;
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
   background-color: brown;
   border: none;
-  padding: 0.25rem 0.25rem;
+  height: 100%;
   color: black;
 }

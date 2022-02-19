@@ -1,7 +1,6 @@
 import React from "react"
-import "../components/Loginform.css"
 import AuthMenubar from "./AuthMenubar"
-import "./Registerform.css"
+import "./Loginform.css"
 
 const RegisterForm = (props) => {
   return (
@@ -11,7 +10,7 @@ const RegisterForm = (props) => {
         <AuthMenubar />
         <div className="login">
           <div className="title-section">
-            <h1 className="">
+            <h1 className="title">
               Text Communication <br /> On The Road
             </h1>
           </div>
