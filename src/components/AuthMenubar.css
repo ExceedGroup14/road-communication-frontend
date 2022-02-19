@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: white;
+}
+
+.auth-action {
+  display: flex;
+}
+
+.authtype-button {
+  margin-left: 10px;
+}
