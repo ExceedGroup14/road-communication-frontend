@@ -4,8 +4,7 @@ const Word = (props) => {
   return (
     <div className="word">
       <input
-        type="submit"
-        placeholder="props.word"
+        placeholder={props.word}
         value={props.Newword}
         onChange={(e) => props.setNewword(e.target.value)}
       ></input>
