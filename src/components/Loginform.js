@@ -1,6 +1,6 @@
-import React from 'react'
-import '../components/Loginform.css'
-import AuthMenubar from './AuthMenubar'
+import React from "react"
+import "./Loginform.css"
+import AuthMenubar from "./AuthMenubar"
 
 const Loginform = (props) => {
   return (
@@ -10,7 +10,7 @@ const Loginform = (props) => {
         <AuthMenubar />
         <div className="login">
           <div className="title-section">
-            <h1 className="">
+            <h1 className="title">
               Text Communication <br /> On The Road
             </h1>
           </div>

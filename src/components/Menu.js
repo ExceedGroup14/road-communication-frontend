@@ -12,6 +12,9 @@ const Menu = () => {
         <li>
           <Link to={`/Status`}>View your light status</Link>
         </li>
+        <li>
+          <Link to={`/Choose`}>Choose which cars you are setting</Link>
+        </li>
         <li>logout</li>
       </ul>
     </div>

@@ -1,33 +1,54 @@
 * {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .login {
   display: flex;
   justify-content: space-between;
-  border: 3px solid white;
   height: 90%;
 }
 
 .title-section {
   color: #fff;
   width: 50%;
-  border: 3px solid red;
   height: 90%;
 }
-
+.title-section h1 {
+  padding: 2%;
+  margin: 5%;
+}
 .form-section {
+  align-self: center;
+  height: fit-content;
   width: 50%;
-  border: 3px solid green;
-  margin: auto;
+  padding-right: 2.5%;
 }
 
-.login input {
-  background-color: white;
+.loginform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  width: 100%;
+}
+.loginform input {
+  flex: 0 0 90%;
+  padding: 0.25rem 0.75rem;
+  border-right: 1px solid brown;
+  border-bottom: 1px solid brown;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: black;
+  color: aliceblue;
+}
+::placeholder {
+  color: brown;
+}
+.inputbutton {
+  height: 37px;
+  border-radius: 10%;
+  flex: 0 0 15%;
+  background-color: brown;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
-  width: 80%;
-  margin-bottom: 15px;
-  font-size: 14px;
+  color: black;
 }

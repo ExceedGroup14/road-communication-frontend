@@ -42,31 +42,33 @@ const Edit = () => {
       <div id="circle"></div>
       <div className="container">
         <Carname />
-        <div className="content">
-          <div className="wordlist">
-            <Word
-              placeholder="Text for button 1"
-              text={text1}
-              setText={setText1}
-            />
-            <Word
-              placeholder="Text for button 2"
-              text={text2}
-              setText={setText2}
-            />
-            <Word
-              placeholder="Text for button 3"
-              text={text3}
-              setText={setText3}
-            />
-            <Word
-              placeholder="Text for button 4"
-              text={text4}
-              setText={setText4}
-            />
-            <button className="editbutton" onClick={sendData}>
-              Edit
-            </button>
+        <div className="edit">
+          <div className="content">
+            <div className="wordlist">
+              <Word
+                placeholder="Text for button 1"
+                text={text1}
+                setText={setText1}
+              />
+              <Word
+                placeholder="Text for button 2"
+                text={text2}
+                setText={setText2}
+              />
+              <Word
+                placeholder="Text for button 3"
+                text={text3}
+                setText={setText3}
+              />
+              <Word
+                placeholder="Text for button 4"
+                text={text4}
+                setText={setText4}
+              />
+              <button className="editbutton" onClick={sendData}>
+                Edit
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -25,10 +25,10 @@
   grid-column: 1;
   box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
 }
-.menulist a {
+a {
   color: aliceblue;
   text-decoration: none;
 }
-.menulist a:hover {
+a:hover {
   color: skyblue;
 }
