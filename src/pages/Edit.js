@@ -4,6 +4,7 @@ import Carname from "../components/Carname"
 import "./edit.css"
 
 const Edit = () => {
+  const [Words, SetWords] = useState([])
   useEffect(() => {}, [])
   return (
     <div className="outer-container">

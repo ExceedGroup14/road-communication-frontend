@@ -8,7 +8,7 @@ const Word = (props) => {
       <form>
         <input
           placeholder={props.word}
-          value={props.Newword}
+          value={props.word}
           onChange={(e) => props.setWord(e.target.value)}
         ></input>
         <button className="editbutton" onClick={props.onClick} type="submit">
