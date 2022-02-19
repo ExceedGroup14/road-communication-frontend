@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+.banner h1 {
+  height: fit-content;
+  color: aliceblue;
+  background-color: black;
+  border-radius: 10%;
+  padding: 1%;
+  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+}
+.menulist {
+  background-color: black;
+  color: aliceblue;
+  display: grid;
+  padding: 1.5% 4%;
+  border-radius: 5%;
+  grid-column: 1;
+  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+}
+.menulist a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.menulist a:hover {
+  color: skyblue;
+}

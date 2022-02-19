@@ -1,11 +1,14 @@
 import React from "react"
 import Carname from "../components/Carname"
+import Carpic from "./car.png"
 
 const Status = () => {
   return (
-    <div>
+    <div className="container">
       <Carname />
-      Status
+      <div className="status">
+        <img src={Carpic} alt="Car pic" />
+      </div>
     </div>
   )
 }

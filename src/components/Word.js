@@ -1,4 +1,5 @@
 import React from "react"
+import "./word.css"
 
 const Word = (props) => {
   return (
@@ -6,7 +7,7 @@ const Word = (props) => {
       <input
         placeholder={props.word}
         value={props.Newword}
-        onChange={(e) => props.setNewword(e.target.value)}
+        onChange={(e) => props.setWord(e.target.value)}
       ></input>
       <button className="editbutton" onClick={props.onClick} type="submit">
         Edit

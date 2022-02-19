@@ -1,0 +1,26 @@
+.word {
+  display: flex;
+  margin-bottom: 5%;
+  border-top-left-radius: 10%;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+}
+.word input {
+  flex: 1 1 0%;
+  padding: 0.25rem 0.75rem;
+  border-right: 1px solid brown;
+  border-bottom: 1px solid brown;
+  outline: none;
+  font-size: 18px;
+  background-color: black;
+}
+.editbutton {
+  flex: 1 1 0%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  background-color: brown;
+  border: none;
+  padding: 0.25rem 0.25rem;
+  color: black;
+}
