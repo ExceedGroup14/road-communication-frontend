@@ -23,14 +23,13 @@ const Edit = (props) => {
   useEffect(() => {
     getData()
     const newInterval = setInterval(() => {
-      getData()
-    }, 5000)
+      getNewData()
+    }, 1800)
     setInterval(newInterval)
     return () => clearInterval(newInterval)
   }, [])
 
   async function getData() {
-    console.log('GET edit')
     const queryParams = new URLSearchParams(window.location.search)
     const serialNumber = queryParams.get('serial')
     const token = cookies.token
@@ -42,6 +41,25 @@ const Edit = (props) => {
     setText2(data.bt2)
     setText3(data.bt3)
     setText4(data.bt4)
+    setStatusBtn1(data.status_bt1)
+    setStatusBtn2(data.status_bt2)
+    setStatusBtn3(data.status_bt3)
+    setStatusBtn4(data.status_bt4)
+    const sortedResponse = await axios.get(
+      `https://ecourse.cpe.ku.ac.th/exceed14/api/sorted_car/?token=${token}&serial_number=${serialNumber}`
+    )
+    const sortedText = Object.keys(sortedResponse.data.result)
+    setSortedCommand(sortedText)
+  }
+
+  async function getNewData() {
+    const queryParams = new URLSearchParams(window.location.search)
+    const serialNumber = queryParams.get('serial')
+    const token = cookies.token
+    const response = await axios.get(
+      `https://ecourse.cpe.ku.ac.th/exceed14/api/get_car/?token=${token}&serial_number=${serialNumber}`
+    )
+    const data = response.data.result
     setStatusBtn1(data.status_bt1)
     setStatusBtn2(data.status_bt2)
     setStatusBtn3(data.status_bt3)

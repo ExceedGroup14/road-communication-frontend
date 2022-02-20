@@ -1,6 +1,7 @@
 import React from 'react'
 import './Loginform.css'
 import AuthMenubar from './AuthMenubar'
+import DecorateObject1 from '../pages/object1.png'
 
 const Loginform = (props) => {
   return (
@@ -8,7 +9,7 @@ const Loginform = (props) => {
       <div id="circle"></div>
       <div className="container">
         <AuthMenubar title="Road Communicator" />
-        <div className="login">
+        <div className="login" style={{ paddingTop: '150px' }}>
           <div className="title-section">
             <h1 className="title">
               Text Communication <br /> On The Road
@@ -17,7 +18,7 @@ const Loginform = (props) => {
           <div className="form-section">
             <form className="loginform">
               <input
-                placeholder="User ID"
+                placeholder="Username"
                 value={props.username}
                 onChange={(e) => props.setUsername(e.target.value)}
               />

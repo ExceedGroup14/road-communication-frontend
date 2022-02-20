@@ -11,6 +11,7 @@ const Status = () => {
   const [cookies, setCookie] = useCookies(['token'])
   const [left, setLeft] = useState(true)
   const [right, setRight] = useState(false)
+  const [brake, setBrake] = useState(true)
 
   useEffect(() => {
     const token = cookies.token
@@ -20,13 +21,12 @@ const Status = () => {
     getData()
     const newInterval = setInterval(() => {
       getData()
-    }, 5000)
+    }, 1800)
     setInterval(newInterval)
     return () => clearInterval(newInterval)
   }, [])
 
   async function getData() {
-    console.log('GET status')
     const queryParams = new URLSearchParams(window.location.search)
     const serialNumber = queryParams.get('serial')
     const token = cookies.token
@@ -36,6 +36,7 @@ const Status = () => {
     const data = response.data.result
     setLeft(!data.status_broken_l)
     setRight(!data.status_broken_r)
+    setBrake(data.status_break)
   }
 
   return (
@@ -54,6 +55,9 @@ const Status = () => {
           <div className={right ? 'rightst working' : 'rightst not-working'}>
             <h3>Right rear light</h3>
             <p>{right ? 'Working' : 'Not Working'}</p>
+          </div>
+          <div className={brake ? 'braking' : 'hide'}>
+            <h3>Break!!!</h3>
           </div>
         </div>
       </div>

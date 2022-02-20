@@ -17,7 +17,7 @@ const NewCar = (props) => {
   async function addNewCar(e) {
     e.preventDefault()
     setShowWarning(false)
-    if (carId === '' || carSerial === '' || carName === '') {
+    if (carId === '' || carSerial === '') {
       setWarning('Please fill out all information')
       setShowWarning(true)
       return
@@ -31,10 +31,12 @@ const NewCar = (props) => {
       'https://ecourse.cpe.ku.ac.th/exceed14/api/add-car/',
       payload
     )
-    console.log(response.data)
-    if ('success' in response.data.result) {
+    if (response.data.result === 'The car was added successfully.') {
       setShow(false)
-      window.refresh()
+      window.location.reload()
+    } else {
+      setWarning(response.data.result)
+      setShowWarning(true)
     }
   }
 

@@ -23,7 +23,7 @@ const RegisterForm = (props) => {
                 onChange={(e) => props.setEmail(e.target.value)}
               />
               <input
-                placeholder="User ID"
+                placeholder="Username"
                 value={props.username}
                 onChange={(e) => props.setUsername(e.target.value)}
               />
@@ -51,6 +51,9 @@ const RegisterForm = (props) => {
                 value={props.lastName}
                 onChange={(e) => props.setLastName(e.target.value)}
               />
+              <span style={{ color: 'red', marginRight: '50px' }}>
+                {props.warning}
+              </span>
               <button
                 className="inputbutton"
                 onClick={props.onClick}

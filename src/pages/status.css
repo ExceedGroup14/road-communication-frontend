@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  border: 1px white;
 }
 .status img {
   height: 300px;
@@ -27,5 +28,23 @@
 }
 
 .status .not-working {
+  box-shadow: 3px 3px 8px rgba(240, 74, 74, 0.712);
+}
+
+.hide {
+  display: none;
+}
+
+.braking {
+  position: absolute;
+  color: red;
+  background-color: black;
+  border-radius: 10%;
+  left: 10;
+  top: 100;
+  margin-bottom: -10px;
+  padding: 10px;
+  height: 30px;
+  width: 70px;
   box-shadow: 3px 3px 8px rgba(240, 74, 74, 0.712);
 }
