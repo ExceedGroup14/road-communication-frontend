@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from "react"
-import Loginform from "../components/Loginform"
-import axios from "axios"
-import { useCookies } from "react-cookie"
+import React, { useState, useEffect } from 'react'
+import Loginform from '../components/Loginform'
+import axios from 'axios'
+import { useCookies } from 'react-cookie'
 
 const Login = () => {
-  const [username, setUsername] = useState("")
-  const [password, setPassword] = useState("")
-  const [cookies, setCookie] = useCookies(["user"])
+  const [cookies, setCookie] = useCookies(['token'])
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
 
-  useEffect(() => {
-    console.log(cookies.token)
-  }, [cookies])
-
+  useEffect((e) => {
+    if (cookies.token !== 'undefined') {
+      window.location.assign('/choose')
+    }
+  })
   async function onSubmit(e) {
     e.preventDefault()
     let data = {
@@ -19,7 +20,7 @@ const Login = () => {
       password: password,
     }
     const response = await axios.post(
-      "https://ecourse.cpe.ku.ac.th/exceed14/api/login/",
+      'https://ecourse.cpe.ku.ac.th/exceed14/api/login/',
       data
     )
     const responseData = response.data
@@ -27,9 +28,8 @@ const Login = () => {
       alert(responseData.result)
       return
     }
-    setCookie('token', responseData.token, { path: '/' })
-    console.log(responseData)
-    alert('See data in console')
+    setCookie('token', responseData.token)
+    window.location.assign('choose')
   }
   return (
     <div className="loginpage">

@@ -1,6 +1,15 @@
 .word {
   display: flex;
   flex-wrap: nowrap;
+}
+
+.active {
+  background-color: #7beb67;
+}
+
+.word-container {
+  padding: 10px;
+  border-radius: 15px;
   margin-bottom: 5%;
 }
 
@@ -35,9 +44,16 @@ form input {
   border-radius: 10px;
   background-color: brown;
   border: none;
-  height: 100%;
+  padding: 15px 0;
   color: black;
   font-size: 14px;
   width: 100%;
   cursor: pointer;
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: white;
 }

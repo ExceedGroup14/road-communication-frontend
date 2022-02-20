@@ -2,10 +2,10 @@ import React from "react"
 import Menu from "./Menu"
 import "./Carname.css"
 
-const Carname = () => {
+const Carname = (props) => {
   return (
     <div className="banner">
-      <h1>Car name</h1>
+      <h1>{props.name}</h1>
       <Menu />
     </div>
   )

@@ -1,13 +1,13 @@
-import React from "react"
-import "./Loginform.css"
-import AuthMenubar from "./AuthMenubar"
+import React from 'react'
+import './Loginform.css'
+import AuthMenubar from './AuthMenubar'
 
 const Loginform = (props) => {
   return (
     <div className="outer-container">
       <div id="circle"></div>
       <div className="container">
-        <AuthMenubar />
+        <AuthMenubar title="Road Communicator" />
         <div className="login">
           <div className="title-section">
             <h1 className="title">

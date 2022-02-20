@@ -15,3 +15,36 @@
 .authtype-button {
   margin-left: 10px;
 }
+
+.button-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.button-container .button {
+  margin-right: 10px;
+  border-radius: 15px;
+  transition-duration: 500ms;
+}
+
+.button-container .button:hover {
+  background-color: white;
+  border-radius: 15px;
+  transition-duration: 500ms;
+}
+
+.button-container .auth-button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+.button-container .auth-button:hover {
+  background-color: white;
+  border-radius: 15px;
+  color: black !important;
+  transition-duration: 500ms;
+}

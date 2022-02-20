@@ -2,6 +2,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .status img {
   height: 300px;
@@ -12,7 +13,6 @@
   background-color: black;
   border-radius: 10%;
   padding: 10px;
-  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
 }
 .status .rightst {
   height: fit-content;
@@ -20,5 +20,12 @@
   background-color: black;
   border-radius: 10%;
   padding: 10px;
-  box-shadow: 3px 3px 8px rgba(138, 67, 67, 0.712);
+}
+
+.status .working {
+  box-shadow: 3px 3px 8px rgba(144, 245, 137, 0.712);
+}
+
+.status .not-working {
+  box-shadow: 3px 3px 8px rgba(240, 74, 74, 0.712);
 }
